@@ -1,12 +1,15 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from './Store';
-import './App.css';
-import homeConnect from './HomeConnect';
+import store from '../Model/Store';
+import '../View/App.css';
+import homeConnect from '../Networking/HomeConnect';
+import AppRouter from '../Management/AppRouter'
 
 function App() { return (<Provider store={store}> {console.log('started')} 
 
 {helloWorld()}
+
+<AppRouter/>
 
 </Provider>); }
 
