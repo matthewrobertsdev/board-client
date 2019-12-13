@@ -1,5 +1,5 @@
 import React from 'react'
 function Posts(props){
-    return (<div>Posts</div>);
+    return (<div className='posts'>Posts</div>);
 }
 export default Posts;
